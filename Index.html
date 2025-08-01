@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotwheels Maniacs Madhouse | Where Grown Adults Play With Tiny Cars</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/carousel 2.png" alt="Hotwheels Maniacs Madhouse" class="me-2">
+                <span class="fw-bold">Hotwheels Maniacs</span>
+                <span class="tagline ms-2 d-none d-lg-inline">Yes, we're adults. No, we're not ashamed.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i> Asylum Entrance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collections"><i class="fas fa-car me-1"></i> Our Toy Box</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#deals"><i class="fas fa-money-bill-wave me-1"></i> Wallet Drainer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community"><i class="fas fa-users me-1"></i> Fellow Maniacs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- First Slide - Custom Image -->
+        <div class="carousel-item active hero" style="background-image: url('img/carousel.jpeg');">
+            <div class="hero-overlay"></div>
+            <div class="container h-100">
+                <div class="hero-content h-100 d-flex align-items-center">
+                    <div class="text-start">
+                        <h1 class="display-4 fw-bold">Welcome to Our <span class="text-warning">Expensive</span> Little Habit</h1>
+                        <p class="lead">Where else can grown adults justify spending $500 on a 1:64 scale piece of metal?</p>
+                        <div class="d-flex gap-3">
+                            <a href="#community" class="btn btn-danger btn-lg">
+                                <i class="fas fa-users me-2"></i> Join Our Support Group
+                            </a>
+                            <a href="#collections" class="btn btn-warning btn-lg">
+                                <i class="fas fa-car-crash me-2"></i> Enable My Addiction
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Slide - Custom Image -->
+        <div class="carousel-item hero" style="background-image: url('img/carousel\ 3.png');">
+            <div class="hero-overlay"></div>
+            <div class="container h-100">
+                <div class="hero-content h-100 d-flex align-items-center">
+                    <div class="text-start">
+                        <h1 class="display-4 fw-bold">Rare Finds & "I Swear It's An Investment" Pieces</h1>
+                        <p class="lead">Track down the car that will complete your collection (until the next one comes out)</p>
+                        <div class="d-flex gap-3">
+                            <a href="#deals" class="btn btn-danger btn-lg">
+                                <i class="fas fa-wallet me-2"></i> Empty My Wallet
+                            </a>
+                            <a href="#deals" class="btn btn-warning btn-lg">
+                                <i class="fas fa-kidney me-2"></i> Sell My Kidney
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Third Slide - Custom Image (Optional) -->
+        <div class="carousel-item hero" style="background-image: url('img/carousel\ 2.png');">
+            <div class="hero-overlay"></div>
+            <div class="container h-100">
+                <div class="hero-content h-100 d-flex align-items-center">
+                    <div class="text-start">
+                        <h1 class="display-4 fw-bold">Join Our Community of Enablers</h1>
+                        <p class="lead">Where your obsession is celebrated and your poor financial decisions are applauded</p>
+                        <div class="d-flex gap-3">
+                            <a href="#community" class="btn btn-danger btn-lg">
+                                <i class="fas fa-handshake me-2"></i> Meet Fellow Maniacs
+                            </a>
+                            <a href="#collections" class="btn btn-warning btn-lg">
+                                <i class="fas fa-trophy me-2"></i> Show Off Your Collection
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+    <!-- Featured Collections -->
+    <section id="collections" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured Collections</h2>
+                <p class="lead">Peek at what other maniacs are wasting... err... investing their money in</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card collection-card h-100">
+                        <div class="position-relative">
+                            <img src="../HW/img/img2.jpg" class="card-img-top" alt="Collection">
+                            <div class="card-overlay">
+                                <button class="btn btn-danger">
+                                    <i class="fas fa-eye me-2"></i> Quick Peek
+                                </button>
+                            </div>
+                            <span class="card-badge badge bg-warning text-dark">"Not for sale"</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Gollum's Treasure Cave</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span><i class="fas fa-car me-1"></i> 237 Models</span>
+                                <span><i class="fas fa-user me-1"></i> SmeagolCollects</span>
+                            </div>
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="text-muted">(42 reviews)</span>
+                            </div>
+                            <p class="card-text"><em>"My wife says I have a problem. I say I have a complete 1995 First Editions set."</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card collection-card h-100">
+                        <div class="position-relative">
+                            <img src="img/img3.jpg" class="card-img-top" alt="Collection">
+                            <div class="card-overlay">
+                                <button class="btn btn-danger">
+                                    <i class="fas fa-eye me-2"></i> Quick Peek
+                                </button>
+                            </div>
+                            <span class="card-badge badge bg-warning text-dark">Will trade for food</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Rent Money Well Spent</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span><i class="fas fa-car me-1"></i> 518 Models</span>
+                                <span><i class="fas fa-user me-1"></i> LivingInMyCar</span>
+                            </div>
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="text-muted">(36 reviews)</span>
+                            </div>
+                            <p class="card-text"><em>"My landlord says 'rent is due', I say 'but look at this rare Treasure Hunt!'"</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card collection-card h-100">
+                        <div class="position-relative">
+                            <img src="img/img1.jpg" class="card-img-top" alt="Collection">
+                            <div class="card-overlay">
+                                <button class="btn btn-danger">
+                                    <i class="fas fa-eye me-2"></i> Quick Peek
+                                </button>
+                            </div>
+                            <span class="card-badge badge bg-danger">Divorce pending</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">My Marriage Counselor Hates Me</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span><i class="fas fa-car me-1"></i> 1,042 Models</span>
+                                <span><i class="fas fa-user me-1"></i> SingleSoon</span>
+                            </div>
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-muted">(89 reviews)</span>
+                            </div>
+                            <p class="card-text"><em>"She said 'it's me or the cars'. I asked if she could help me find the 1969 Pink Rear-Loading Beach Bomb."</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-danger">
+                    <i class="fas fa-arrow-right me-2"></i> View More Collections
+                </a>
+                <p class="funny-label mt-2">* Hotwheels Maniacs Madhouse not responsible for divorce, bankruptcy, or explaining to your family why you need "just one more".</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Deals -->
+    <section id="deals" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Today's "Deals"</h2>
+                <p class="lead">Because you definitely don't have enough tiny cars yet</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card deal-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top" alt="Deal">
+                            <span class="card-badge badge bg-danger">"Rare"</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">2005 Treasure Hunt (Slightly Chewed)</h3>
+                            <div class="mb-3">
+                                <span class="text-decoration-line-through text-muted me-2">$199.99</span>
+                                <span class="fw-bold text-danger fs-4">$149.99</span>
+                                <span class="d-block text-success fw-bold">Save $50!</span>
+                            </div>
+                            <p class="card-text"><em>"My dog only played with it for a minute. Teeth marks add character."</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-clock me-1"></i> 2h 15m left</span>
+                                <span><i class="fas fa-fire me-1"></i> 5 people want this</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card deal-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top" alt="Deal">
+                            <span class="card-badge badge bg-warning text-dark">"Mint"</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">1968 Custom Camaro (Allegedly)</h3>
+                            <div class="mb-3">
+                                <span class="text-decoration-line-through text-muted me-2">$899.99</span>
+                                <span class="fw-bold text-danger fs-4">$799.99</span>
+                                <span class="d-block text-success fw-bold">Save $100!</span>
+                            </div>
+                            <p class="card-text"><em>"Grandpa's attic find. May or may not be authentic. No refunds."</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-clock me-1"></i> 5h 42m left</span>
+                                <span><i class="fas fa-fire me-1"></i> 12 people want this</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card deal-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top" alt="Deal">
+                            <span class="card-badge badge bg-success">"Investment"</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">2023 Super Treasure Hunt (Still in Store)</h3>
+                            <div class="mb-3">
+                                <span class="text-decoration-line-through text-muted me-2">$1.25</span>
+                                <span class="fw-bold text-danger fs-4">$49.99</span>
+                                <span class="d-block text-success fw-bold">"Future Profit"</span>
+                            </div>
+                            <p class="card-text"><em>"I bought all 20 from my local Walmart. You're welcome to one... for a small markup."</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-clock me-1"></i> 1d 3h left</span>
+                                <span><i class="fas fa-fire me-1"></i> 27 people want this</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-danger">
+                    <i class="fas fa-gem me-2"></i> View All "Deals"
+                </a>
+                <p class="funny-label mt-2">* "Deals" may not actually be deals. We just know you'll buy them anyway.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Join Our "Support" Group</h2>
+                <p class="lead">Where we enable each other's bad decisions</p>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number fs-3 fw-bold">24,867</div>
+                            <div class="stat-label text-muted">Certified Maniacs</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number fs-3 fw-bold">3.2M+</div>
+                            <div class="stat-label text-muted">Tiny Cars</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number fs-3 fw-bold">$∞</div>
+                            <div class="stat-label text-muted">Collectively Wasted</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart-broken"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number fs-3 fw-bold">1,429</div>
+                            <div class="stat-label text-muted">Failed Relationships</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="testimonial-content position-relative z-1 mb-4">
+                                <p class="fs-5"><em>"I sold my couch to buy a rare Bone Shaker. Now I sit on my cars. 10/10 would do again."</em></p>
+                            </div>
+                            <div class="testimonial-author d-flex align-items-center">
+                                <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="rounded-circle me-3" width="60" height="60" alt="Happy Collector">
+                                <div>
+                                    <div class="fw-bold">CouchlessCarl</div>
+                                    <div class="text-muted small">Professional Floor Sitter</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="testimonial-content position-relative z-1 mb-4">
+                                <p class="fs-5"><em>"My therapist says I have a problem. I say I have a complete 2011 Super Treasure Hunt set."</em></p>
+                            </div>
+                            <div class="testimonial-author d-flex align-items-center">
+                                <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="rounded-circle me-3" width="60" height="60" alt="Happy Collector">
+                                <div>
+                                    <div class="fw-bold">TherapyResistantTim</div>
+                                    <div class="text-muted small">In Denial Since 2008</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="text-white mb-4">Hotwheels Maniacs Madhouse</h3>
+                    <p>Enabling poor financial decisions since 1968. Not affiliated with Mattel (but we wish we were).</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-ebay"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Why We're Like This</a></li>
+                        <li class="mb-2"><a href="#">How to Hide Purchases</a></li>
+                        <li class="mb-2"><a href="#">Divorce Lawyers</a></li>
+                        <li class="mb-2"><a href="#">Storage Solutions</a></li>
+                        <li class="mb-2"><a href="#">Excuses for Spouses</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Help & Support</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">FAQ (Frequently Avoided Questions)</a></li>
+                        <li class="mb-2"><a href="#">Shipping (We're Not Amazon)</a></li>
+                        <li class="mb-2"><a href="#">Returns (LOL)</a></li>
+                        <li class="mb-2"><a href="#">Contact (We Probably Won't Reply)</a></li>
+                        <li class="mb-2"><a href="#">Therapy Recommendations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Legal Stuff</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Terms of Service (Don't Read)</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy (We Sell Your Data)</a></li>
+                        <li class="mb-2"><a href="#">Cookie Policy (Mmm... Cookies)</a></li>
+                        <li class="mb-2"><a href="#">Disclaimer (Not Our Fault)</a></li>
+                        <li class="mb-2"><a href="#">Get Rich Quick Schemes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-top mt-5 pt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-md-0">&copy; 2025 Hotwheels Maniacs Madhouse. All rights reserved. All cars overpriced.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="me-3">Sitemap</a>
+                        <a href="#" class="me-3">Accessibility</a>
+                        <a href="#" class="me-3">Affiliates</a>
+                        <a href="#">Dark Patterns</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

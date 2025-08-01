@@ -1,0 +1,194 @@
+:root {
+    --hotwheels-red: #E51937;
+    --hotwheels-blue: #0066CC;
+    --hotwheels-gold: #FFD700;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.funny-label {
+    font-size: 0.8rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.hero {
+    height: 80vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.collection-card, .deal-card {
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.collection-card:hover, .deal-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.collection-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.testimonial-card {
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';
+    font-size: 5rem;
+    color: rgba(229, 25, 55, 0.1);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    line-height: 1;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: var(--hotwheels-red);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(229, 25, 55, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 60px 0 0;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    background-color: var(--hotwheels-red);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.btn-warning {
+    color: #000;
+}
+
+/* Custom button icons */
+.btn i.fa-car-crash {
+    transform: rotate(45deg);
+}
+
+.btn i.fa-kidney {
+    color: var(--hotwheels-red);
+}
+
+.btn i.fa-gem {
+    color: var(--hotwheels-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+    }
+}
