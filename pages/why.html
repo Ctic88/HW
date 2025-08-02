@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why We're Like This | Hotwheels Maniacs Madhouse</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Page-specific styles */
+        .psychology-card {
+            border-left: 5px solid var(--hotwheels-red);
+            transition: all 0.3s;
+        }
+        .psychology-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(229, 25, 55, 0.1);
+        }
+        .theory-icon {
+            font-size: 2.5rem;
+            color: var(--hotwheels-red);
+            margin-bottom: 1rem;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--hotwheels-red);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -43px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--hotwheels-red);
+            border: 4px solid white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo.png" alt="Hotwheels Maniacs Madhouse" class="me-2">
+                <span class="fw-bold">Hotwheels Maniacs</span>
+                <span class="tagline ms-2 d-none d-lg-inline">Yes, we're adults. No, we're not ashamed.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asylum.html"><i class="fas fa-door-open me-1"></i> Asylum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="why.html"><i class="fas fa-question-circle me-1"></i> Why We're Like This</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="excuses.html"><i class="fas fa-comment-dots me-1"></i> Excuses</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero" style="background-image: url('../img/carousel.jpeg');">
+    <div class="hero-overlay"></div>
+    <div class="container h-100 d-flex">
+        <div class="row align-items-center w-100">
+            <div class="col-12 text-center text-white">
+                <h1 class="display-3 fw-bold" style="color: white;">Why We're Like This</h1>
+                <p class="lead" style="color: white;">The scientific(ish) explanation for our Hot Wheels obsession</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Psychological Theories Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">The Psychology Behind the Madness</h2>
+                <p class="lead">According to "experts" (mostly us after midnight)</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card psychology-card h-100">
+                        <div class="card-body text-center">
+                            <div class="theory-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Nostalgia Factor</h3>
+                            <p class="card-text">Our brains are hardwired to chase childhood joy. Tiny cars = instant dopamine.</p>
+                            <button class="btn btn-sm btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#theory1">Read Study</button>
+                            <div class="collapse mt-2" id="theory1">
+                                <small class="text-muted">*Study conducted in our garage with 100% biased participants</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card psychology-card h-100">
+                        <div class="card-body text-center">
+                            <div class="theory-icon">
+                                <i class="fas fa-search-dollar"></i>
+                            </div>
+                            <h3>Trophy Hunting</h3>
+                            <p class="card-text">Treasure Hunts trigger the same pleasure centers as actual treasure.</p>
+                            <button class="btn btn-sm btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#theory2">Read Study</button>
+                            <div class="collapse mt-2" id="theory2">
+                                <small class="text-muted">*MRI scans showed identical brain activity to pirates finding gold</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card psychology-card h-100">
+                        <div class="card-body text-center">
+                            <div class="theory-icon">
+                                <i class="fas fa-people-arrows"></i>
+                            </div>
+                            <h3>Tribe Mentality</h3>
+                            <p class="card-text">Collectors aren't weird - everyone else is weird for not collecting.</p>
+                            <button class="btn btn-sm btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#theory3">Read Study</button>
+                            <div class="collapse mt-2" id="theory3">
+                                <small class="text-muted">*Survey of 5 collectors and their very supportive moms</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card psychology-card h-100">
+                        <div class="card-body text-center">
+                            <div class="theory-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h3>Completion OCD</h3>
+                            <p class="card-text">That one missing car from the 2007 series? Our brains won't let it go.</p>
+                            <button class="btn btn-sm btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#theory4">Read Study</button>
+                            <div class="collapse mt-2" id="theory4">
+                                <small class="text-muted">*Clinical diagnosis: Awesome Collector Syndrome</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evolutionary Timeline -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">The Evolution of a Maniac</h2>
+                <p class="lead">How normal people become Hot Wheels-obsessed</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3><i class="fas fa-baby text-danger me-2"></i> Stage 1: Innocence</h3>
+                    <p>"It's just a toy car, how addictive could it be?"</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3><i class="fas fa-search text-danger me-2"></i> Stage 2: Discovery</h3>
+                    <p>"Wait... some of these are rare? And people collect them?"</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3><i class="fas fa-shopping-cart text-danger me-2"></i> Stage 3: First Haul</h3>
+                    <p>"I'll just buy a few favorites... oh look a whole case!"</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3><i class="fas fa-warehouse text-danger me-2"></i> Stage 4: The Spiral</h3>
+                    <p>"Honey, we need more shelves. And maybe a second mortgage."</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3><i class="fas fa-certificate text-danger me-2"></i> Stage 5: Acceptance</h3>
+                    <p>"Yes officer, I do need 37 versions of the same car. It's called collecting."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Famous Maniacs -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Famous Maniacs Through History</h2>
+                <p class="lead">You're in good (questionable) company</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/collector1.jpg" class="card-img-top" alt="Historical Collector">
+                        <div class="card-body">
+                            <h3 class="card-title">King George III</h3>
+                            <p class="card-text">"Lost the colonies but had the dopest 1:64 carriage collection in Europe."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/collector2.jpg" class="card-img-top" alt="Historical Collector">
+                        <div class="card-body">
+                            <h3 class="card-title">Marie Antoinette</h3>
+                            <p class="card-text">"Let them eat cake? More like 'Let me buy all the tiny cake carts!'"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/collector3.jpg" class="card-img-top" alt="Historical Collector">
+                        <div class="card-body">
+                            <h3 class="card-title">Nikola Tesla</h3>
+                            <p class="card-text">"Invented alternating current just to power his custom Hot Wheels track."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-5 bg-danger text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Embrace Your Inner Maniac</h2>
+            <p class="lead mb-4">Join thousands of other collectors who prioritize tiny cars over sensible life choices</p>
+            <a href="asylum.html" class="btn btn-warning btn-lg">
+                <i class="fas fa-door-open me-2"></i> Enter the Asylum
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="mb-0">&copy; 2023 Hotwheels Maniacs Madhouse. All rights reserved. No psychologists were consulted.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
