@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excuses for Spouses | Hotwheels Maniacs Madhouse</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Additional Styles for This Page */
+        .excuse-card {
+            transition: transform 0.3s;
+            border-left: 5px solid var(--hotwheels-red);
+        }
+        .excuse-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(229, 25, 55, 0.1);
+        }
+        .excuse-number {
+            background-color: var(--hotwheels-red);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .category-badge {
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/carousel 2.png" alt="Hotwheels Maniacs Madhouse" class="me-2">
+                <span class="fw-bold">Hotwheels Maniacs</span>
+                <span class="tagline ms-2 d-none d-lg-inline">Yes, we're adults. No, we're not ashamed.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asylum.html"><i class="fas fa-door-open me-1"></i> Asylum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="excuses.html"><i class="fas fa-comment-dots me-1"></i> Excuses for Spouses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="community.html"><i class="fas fa-users me-1"></i> Community</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero position-relative" style="background-image: url('../img/carousel.jpeg');">
+    <!-- Added position-relative to parent -->
+    <div class="hero-overlay position-absolute w-100 h-100"></div>
+    <!-- Added position-absolute, w-100, h-100 to overlay -->
+    
+    <div class="container h-100 position-relative">
+        <!-- Added position-relative to container -->
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <h1 class="display-3 fw-bold text-white">101 Excuses for Spouses</h1>
+                <!-- Explicit text-white class added -->
+                <p class="lead text-white">Because "I just wanted it" isn't convincing enough</p>
+                <!-- Explicit text-white class added -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Intro Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">"Why Do You Need More Tiny Cars?!"</h2>
+            <p class="lead">We've all been there. Your spouse sees the credit card bill or finds your latest haul. <br> 
+            <strong>Don't panic!</strong> Use one of these 101 scientifically-proven* excuses.</p>
+            <p class="small text-muted">*Not actually scientifically proven</p>
+            
+            <div class="search-box input-group mb-3">
+                <input type="text" id="excuseSearch" class="form-control" placeholder="Search excuses...">
+                <button class="btn btn-danger" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                <button class="btn btn-sm btn-outline-danger filter-btn" data-category="all">All</button>
+                <button class="btn btn-sm btn-outline-danger filter-btn" data-category="financial">Financial</button>
+                <button class="btn btn-sm btn-outline-danger filter-btn" data-category="emotional">Emotional</button>
+                <button class="btn btn-sm btn-outline-danger filter-btn" data-category="logical">"Logical"</button>
+                <button class="btn btn-sm btn-outline-danger filter-btn" data-category="absurd">Absurd</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excuses List -->
+    <section id="excuses" class="py-5">
+        <div class="container">
+            <div class="row g-4" id="excusesContainer">
+                <!-- Excuses will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Plea -->
+    <section class="py-5 bg-danger text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Still Not Working?</h2>
+            <p class="lead">If none of these excuses satisfy your spouse, try our last resort:</p>
+            <div class="card bg-dark text-white mx-auto" style="max-width: 600px;">
+                <div class="card-body">
+                    <h3 class="card-title">"At least I'm not into gambling/drugs/golf!"</h3>
+                    <p class="card-text">Works 23% of the time (according to our very real statistics).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="mb-0">&copy; 2025 Hotwheels Maniacs Madhouse. All rights reserved. No spouses were harmed in the making of this page.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/excuses.js"></script>
+</body>
+</html>

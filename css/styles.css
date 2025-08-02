@@ -192,3 +192,90 @@ body {
         flex-direction: column;
     }
 }
+
+/* Asylum Page Specific Styles */
+.card.border-danger {
+    border-width: 2px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.border-danger:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(229, 25, 55, 0.1);
+}
+
+.hero-asylum {
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    min-height: 400px;
+    position: relative;
+    color: white;
+}
+
+/* Warning Sign Cards */
+.bg-danger.rounded-circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Testimonial Images */
+.testimonial-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-asylum {
+        height: 50vh;
+    }
+    
+    .d-flex.align-items-center.mb-3 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .bg-danger.rounded-circle {
+        margin-bottom: 15px;
+    }
+}
+
+/* Add these to your existing styles.css */
+.excuse-card {
+    transition: transform 0.3s;
+    border-left: 5px solid var(--hotwheels-red);
+}
+.excuse-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(229, 25, 55, 0.1);
+}
+.excuse-number {
+    background-color: var(--hotwheels-red);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.search-box {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+.category-badge {
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+.filter-btn.active {
+    background-color: var(--hotwheels-red);
+    color: white !important;
+}
