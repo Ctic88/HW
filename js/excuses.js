@@ -76,7 +76,7 @@ const excuses = [
     { text: "It's for my future museum", category: "logical" },
     { text: "I'm preventing toy shortages", category: "logical" },
     { text: "It's my backup career plan", category: "logical" },
-    { text: "I'm supporting American manufacturing", category: "logical" },
+    { text: "I'm supporting Malaysian manufacturing", category: "logical" },
     { text: "It's my retirement hobby starter kit", category: "logical" },
     { text: "I'm conducting a longitudinal study", category: "logical" },
     { text: "It's for my thesis on miniature transportation", category: "logical" },

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Solutions | Hotwheels Maniacs Madhouse</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Page-specific styles */
+        .solution-card {
+            transition: all 0.3s;
+            border-left: 5px solid var(--hotwheels-red);
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(229, 25, 55, 0.1);
+        }
+        .solution-icon {
+            font-size: 2.5rem;
+            color: var(--hotwheels-red);
+            margin-bottom: 1rem;
+        }
+        .storage-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.8rem;
+        }
+        .storage-image {
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo.png" alt="Hotwheels Maniacs Madhouse" class="me-2">
+                <span class="fw-bold">Hotwheels Maniacs</span>
+                <span class="tagline ms-2 d-none d-lg-inline">Yes, we're adults. No, we're not ashamed.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asylum.html"><i class="fas fa-door-open me-1"></i> Asylum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why.html"><i class="fas fa-question-circle me-1"></i> Why We're Like This</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="storage.html"><i class="fas fa-boxes me-1"></i> Storage Solutions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('../img/carousel.jpeg');">
+        <div class="hero-overlay"></div>
+        <div class="container h-100 d-flex">
+            <div class="row align-items-center w-100">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-3 fw-bold">Storage Solutions for the Obsessed</h1>
+                    <p class="lead">When "just one more shelf" isn't cutting it anymore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Storage Solutions -->
+    <section id="solutions" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Creative (Desperate) Storage Ideas</h2>
+                <p class="lead">Because your spouse says you can't turn the living room into a showroom... yet</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top storage-image" alt="Wall Display">
+                            <span class="storage-badge badge bg-danger">"Wife Approved"</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="solution-icon">
+                                <i class="fas fa-border-all"></i>
+                            </div>
+                            <h3>Wall Displays</h3>
+                            <p class="card-text"><em>"Honey, it's modern art!" - You, convincing your spouse that 200 cars on the wall is tasteful decor.</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-dollar-sign me-1"></i> Cost: Your dignity</span>
+                                <span><i class="fas fa-car me-1"></i> Capacity: 200+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top storage-image" alt="Under Bed Storage">
+                            <span class="storage-badge badge bg-warning text-dark">"Secret Stash"</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="solution-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <h3>Under Bed</h3>
+                            <p class="card-text"><em>"What cars? These? Oh, they've been there forever..." - You, when your spouse discovers 300 cars under the mattress.</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-dollar-sign me-1"></i> Cost: Suspicious glances</span>
+                                <span><i class="fas fa-car me-1"></i> Capacity: 300-500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top storage-image" alt="Garage Storage">
+                            <span class="storage-badge badge bg-success">"Divorce Proof"</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="solution-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h3>Garage Takeover</h3>
+                            <p class="card-text"><em>"The car can sleep outside - my Hot Wheels need climate control!" - You, parking your actual car in the driveway.</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-dollar-sign me-1"></i> Cost: Marital counseling</span>
+                                <span><i class="fas fa-car me-1"></i> Capacity: ∞</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top storage-image" alt="Closet Storage">
+                            <span class="storage-badge badge bg-primary">"Stealth Mode"</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="solution-icon">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                            <h3>Closet Conversion</h3>
+                            <p class="card-text"><em>"I'm downsizing my wardrobe to essentials" - You, wearing the same shirt for a week to free up space.</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-dollar-sign me-1"></i> Cost: Fashion sense</span>
+                                <span><i class="fas fa-car me-1"></i> Capacity: 150-300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top storage-image" alt="Storage Unit">
+                            <span class="storage-badge badge bg-info text-dark">"Professional"</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="solution-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3>Rent a Storage Unit</h3>
+                            <p class="card-text"><em>"It's for seasonal items" - You, visiting your "seasonal items" 3 times a week to add more cars.</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-dollar-sign me-1"></i> Cost: $100+/month</span>
+                                <span><i class="fas fa-car me-1"></i> Capacity: 1000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card solution-card h-100">
+                        <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top storage-image" alt="Friends House">
+                            <span class="storage-badge badge bg-dark">"Temporary"</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="solution-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h3>Friend's House</h3>
+                            <p class="card-text"><em>"Just storing a few boxes" - You, slowly turning your friend's basement into your personal museum.</em></p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-dollar-sign me-1"></i> Cost: Friendship</span>
+                                <span><i class="fas fa-car me-1"></i> Capacity: Until they notice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Storage Calculator -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">Storage Crisis Calculator</h2>
+                    <p class="lead">Find out how doomed you really are</p>
+                    <p>Enter how many cars you have and we'll tell you how many storage solutions you'll need to hide them from your spouse.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="storageCalculator">
+                                <div class="mb-3">
+                                    <label for="carCount" class="form-label">Number of Hot Wheels:</label>
+                                    <input type="number" class="form-control" id="carCount" min="1" value="100">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="spouseAwareness" class="form-label">Spouse Awareness Level:</label>
+                                    <select class="form-select" id="spouseAwareness">
+                                        <option value="clueless">Clueless (Thinks you have <50)</option>
+                                        <option value="suspicious">Suspicious (Knows about 50-200)</option>
+                                        <option value="angry">Angry (Has seen 200-500)</option>
+                                        <option value="resigned">Resigned (500+, they've given up)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100">
+                                    <i class="fas fa-calculator me-2"></i> Calculate My Doom
+                                </button>
+                            </form>
+                            <div id="calculatorResult" class="mt-3 text-center" style="display: none;">
+                                <h3 class="text-danger">Result:</h3>
+                                <p id="resultText" class="lead"></p>
+                                <div id="storageRecommendation"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What Our Maniacs Say</h2>
+                <p class="lead">Real stories from collectors who've lost the storage battle</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-4 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text"><em>"I turned our guest room into a Hot Wheels museum. Now we have fewer visitors, but my collection is beautifully displayed!"</em></p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Happy Collector">
+                                <div>
+                                    <div class="fw-bold">NoMoreGuestsGary</div>
+                                    <div class="text-muted small">1,200+ Cars</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-4 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text"><em>"My wife said 'the cars or me'. I rented a storage unit. She thinks I chose her. Joke's on her - the unit fits 3,000 cars!"</em></p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Happy Collector">
+                                <div>
+                                    <div class="fw-bold">SneakyStorageSteve</div>
+                                    <div class="text-muted small">Master of Deception</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-4 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text"><em>"I built a secret room behind a bookcase. My husband still doesn't know why our house is 2 feet shorter than the neighbors'."</em></p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Happy Collector">
+                                <div>
+                                    <div class="fw-bold">SecretRoomSarah</div>
+                                    <div class="text-muted small">Amateur Architect</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="text-white mb-4">Hotwheels Maniacs</h3>
+                    <p>Enabling poor financial decisions since 1968. Not affiliated with Mattel (but we wish we were).</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../pages/why.html">Why We're Like This</a></li>
+                        <li class="mb-2"><a href="../pages/hide.html">How to Hide Purchases</a></li>
+                        <li class="mb-2"><a href="https://www.avocati-romania.com/articole/cum-sa-gasesti-un-avocat-bun-pentru-divorturi-11">Divorce Lawyers</a></li>
+                        <li class="mb-2"><a href="../pages/storage.html">Storage Solutions</a></li>
+                        <li class="mb-2"><a href="../pages/excuses.html">Excuses for Spouses</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Help & Support</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">FAQ (Frequently Avoided Questions)</a></li>
+                        <li class="mb-2"><a href="#">Shipping (We're Not Amazon)</a></li>
+                        <li class="mb-2"><a href="#">Returns (LOL)</a></li>
+                        <li class="mb-2"><a href="#">Contact (We Probably Won't Reply)</a></li>
+                        <li class="mb-2"><a href="#">Therapy Recommendations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Legal Stuff</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Terms of Service (Don't Read)</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy (We Sell Your Data)</a></li>
+                        <li class="mb-2"><a href="#">Cookie Policy (Mmm... Cookies)</a></li>
+                        <li class="mb-2"><a href="#">Disclaimer (Not Our Fault)</a></li>
+                        <li class="mb-2"><a href="#">Get Rich Quick Schemes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+<div class="border-top mt-5 pt-4">
+    <div class="row justify-content-center"> 
+        <div class="col-md-6 text-center"> 
+            <p class="mb-0">&copy; 2025 Hotwheels Maniacs Madhouse. All rights reserved. All cars overpriced.</p>
+        </div>
+    </div>
+</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/storage.js"></script>
+</body>
+</html>

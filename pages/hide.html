@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Hide Your Purchases | Hotwheels Maniacs Madhouse</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Page-specific styles */
+        .method-card {
+            transition: all 0.3s;
+            border-left: 5px solid var(--hotwheels-red);
+        }
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(229, 25, 55, 0.1);
+        }
+        .effectiveness-meter {
+            height: 10px;
+            border-radius: 5px;
+            background: #e9ecef;
+            margin-bottom: 10px;
+        }
+        .effectiveness-bar {
+            height: 100%;
+            border-radius: 5px;
+            background: var(--hotwheels-red);
+        }
+        .difficulty-badge {
+            font-size: 0.8rem;
+        }
+        .stealth-image {
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .stealth-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo.png" alt="Hotwheels Maniacs Madhouse" class="me-2">
+                <span class="fw-bold">Hotwheels Maniacs</span>
+                <span class="tagline ms-2 d-none d-lg-inline">Yes, we're adults. No, we're not ashamed.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asylum.html"><i class="fas fa-door-open me-1"></i> Asylum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="excuses.html"><i class="fas fa-comment-dots me-1"></i> Excuses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hide-purchases.html"><i class="fas fa-user-secret me-1"></i> Hide Purchases</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('../img/carousel.jpeg');">
+        <div class="hero-overlay"></div>
+        <div class="container h-100 d-flex">
+            <div class="row align-items-center w-100">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-3 fw-bold">How to Hide Your Purchases</h1>
+                    <p class="lead">Because "I found it in the attic" only works so many times</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stealth Methods -->
+    <section id="stealthMethods" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Advanced Stealth Techniques</h2>
+                <p class="lead">From beginner lies to expert-level deception</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Mail Interception">
+                            <span class="stealth-badge badge bg-success">Beginner</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Mail Interception</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>3/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 60%"></div>
+                            </div>
+                            <p class="card-text"><em>"What package? Oh that? It's just... vitamins!" - You, frantically hiding eBay purchases before your spouse gets home.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-warning text-dark difficulty-badge"><i class="fas fa-stopwatch me-1"></i> Quick Setup</span>
+                                <span class="badge bg-info text-dark difficulty-badge"><i class="fas fa-user me-1"></i> Solo Operation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Friend's Address">
+                            <span class="stealth-badge badge bg-warning text-dark">Intermediate</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Friend's Address</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>4/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 80%"></div>
+                            </div>
+                            <p class="card-text"><em>"I'm just holding this for a friend" - You, explaining why 50 packages arrived at your buddy's house this month.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-danger difficulty-badge"><i class="fas fa-users me-1"></i> Requires Accomplice</span>
+                                <span class="badge bg-primary difficulty-badge"><i class="fas fa-car me-1"></i> Vehicle Needed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Work Delivery">
+                            <span class="stealth-badge badge bg-danger">Expert</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Work Delivery</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>5/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 100%"></div>
+                            </div>
+                            <p class="card-text"><em>"Just some work supplies" - You, smuggling Hot Wheels past security in your briefcase for the third time this week.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-success difficulty-badge"><i class="fas fa-briefcase me-1"></i> Office Job Required</span>
+                                <span class="badge bg-dark difficulty-badge"><i class="fas fa-clock me-1"></i> Long-Term Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Laundry Camouflage">
+                            <span class="stealth-badge badge bg-success">Beginner</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Laundry Camouflage</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>2/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 40%"></div>
+                            </div>
+                            <p class="card-text"><em>"Just doing laundry!" - You, stuffing Hot Wheels into pants pockets before your spouse does the wash.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-warning text-dark difficulty-badge"><i class="fas fa-tshirt me-1"></i> Clothing Required</span>
+                                <span class="badge bg-info text-dark difficulty-badge"><i class="fas fa-exclamation-triangle me-1"></i> Risky</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Trunk Stash">
+                            <span class="stealth-badge badge bg-warning text-dark">Intermediate</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Trunk Stash</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>4/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 80%"></div>
+                            </div>
+                            <p class="card-text"><em>"I'm just keeping emergency supplies in the car" - You, with 200 cars in the trunk and a nervous smile.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-primary difficulty-badge"><i class="fas fa-car me-1"></i> Vehicle Needed</span>
+                                <span class="badge bg-dark difficulty-badge"><i class="fas fa-temperature-low me-1"></i> Climate Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Digital Laundering">
+                            <span class="stealth-badge badge bg-danger">Expert</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Digital Laundering</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>5/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 100%"></div>
+                            </div>
+                            <p class="card-text"><em>"Must be a bank error" - You, when your spouse notices mysterious PayPal transactions labeled "Grocery Store."</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-success difficulty-badge"><i class="fas fa-laptop me-1"></i> Tech Skills</span>
+                                <span class="badge bg-info text-dark difficulty-badge"><i class="fas fa-lock me-1"></i> Password Protection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Additional Method 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Gift Wrapping">
+                            <span class="stealth-badge badge bg-success">Beginner</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Gift Wrapping</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>3/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 60%"></div>
+                            </div>
+                            <p class="card-text"><em>"It's for your birthday!" - You, in July, showing your spouse a wrapped Hot Wheels package you'll "forget" to give them.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-warning text-dark difficulty-badge"><i class="fas fa-gift me-1"></i> Seasonal</span>
+                                <span class="badge bg-info text-dark difficulty-badge"><i class="fas fa-calendar me-1"></i> Limited Use</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Method 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Toy Drive Donation">
+                            <span class="stealth-badge badge bg-warning text-dark">Intermediate</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Toy Drive Donation</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>4/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 80%"></div>
+                            </div>
+                            <p class="card-text"><em>"Just donating to charity!" - You, carefully selecting which cars to "donate" (keep) from your bulk purchases.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-danger difficulty-badge"><i class="fas fa-hand-holding-heart me-1"></i> Requires Receipts</span>
+                                <span class="badge bg-primary difficulty-badge"><i class="fas fa-calendar-alt me-1"></i> Holiday Season</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Method 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Storage Unit">
+                            <span class="stealth-badge badge bg-danger">Expert</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Storage Unit</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>5/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 100%"></div>
+                            </div>
+                            <p class="card-text"><em>"It's just seasonal decorations" - You, paying $200/month to store 5,000 Hot Wheels you "might sell someday."</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-success difficulty-badge"><i class="fas fa-lock me-1"></i> Secure</span>
+                                <span class="badge bg-dark difficulty-badge"><i class="fas fa-dollar-sign me-1"></i> Expensive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Method 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Neighbor's Garage">
+                            <span class="stealth-badge badge bg-success">Beginner</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Neighbor's Garage</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>2/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 40%"></div>
+                            </div>
+                            <p class="card-text"><em>"Just helping old Mr. Wilson organize" - You, slowly colonizing his garage with your collection.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-warning text-dark difficulty-badge"><i class="fas fa-home me-1"></i> Requires Nice Neighbor</span>
+                                <span class="badge bg-info text-dark difficulty-badge"><i class="fas fa-exclamation-triangle me-1"></i> Risky</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Method 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Fake Business">
+                            <span class="stealth-badge badge bg-warning text-dark">Intermediate</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Fake Business</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>4/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 80%"></div>
+                            </div>
+                            <p class="card-text"><em>"It's inventory for my side hustle!" - You, showing your spouse the fake Etsy store you made as cover.</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-primary difficulty-badge"><i class="fas fa-store me-1"></i> Requires Website</span>
+                                <span class="badge bg-dark difficulty-badge"><i class="fas fa-file-invoice me-1"></i> Tax Implications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Method 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card method-card h-100">
+                        <!-- <div class="position-relative">
+                            <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="card-img-top stealth-image" alt="Car Seat Storage">
+                            <span class="stealth-badge badge bg-danger">Expert</span>
+                        </div> -->
+                        <div class="card-body">
+                            <h3>Car Seat Storage</h3>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Effectiveness:</span>
+                                <span>5/5</span>
+                            </div>
+                            <div class="effectiveness-meter">
+                                <div class="effectiveness-bar" style="width: 100%"></div>
+                            </div>
+                            <p class="card-text"><em>"Just keeping the kids entertained!" - You, with 50 cars stuffed under each car seat (you don't have kids).</em></p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-success difficulty-badge"><i class="fas fa-car-side me-1"></i> Vehicle Required</span>
+                                <span class="badge bg-info text-dark difficulty-badge"><i class="fas fa-child me-1"></i> Suspicious If Childless</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stealth Calculator -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">Stealth Effectiveness Calculator</h2>
+                    <p class="lead">Find out how likely you are to get caught</p>
+                    <p>Enter your situation and we'll calculate your risk of discovery and recommend stealth techniques.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="stealthCalculator">
+                                <div class="mb-3">
+                                    <label for="purchaseFrequency" class="form-label">Purchase Frequency:</label>
+                                    <select class="form-select" id="purchaseFrequency">
+                                        <option value="occasional">Occasional (1-2/month)</option>
+                                        <option value="regular">Regular (3-5/month)</option>
+                                        <option value="frequent">Frequent (1-2/week)</option>
+                                        <option value="addict">Addict (Daily)</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="spouseTech" class="form-label">Spouse Tech Savviness:</label>
+                                    <select class="form-select" id="spouseTech">
+                                        <option value="clueless">Clueless (Thinks WiFi is magic)</option>
+                                        <option value="basic">Basic (Can check email)</option>
+                                        <option value="advanced">Advanced (Online banking)</option>
+                                        <option value="expert">Expert (Works in IT)</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="bankAccess" class="form-label">Spouse Bank Access:</label>
+                                    <select class="form-select" id="bankAccess">
+                                        <option value="none">None (You manage finances)</option>
+                                        <option value="view">View Only (Can see statements)</option>
+                                        <option value="full">Full Access (Controls budget)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100">
+                                    <i class="fas fa-user-secret me-2"></i> Calculate My Stealth
+                                </button>
+                            </form>
+                            <div id="calculatorResult" class="mt-3 text-center" style="display: none;">
+                                <h3 class="text-danger">Result:</h3>
+                                <p id="resultText" class="lead"></p>
+                                <div id="stealthRecommendation"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Stealth Success Stories</h2>
+                <p class="lead">Real techniques from master concealers</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-4 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text"><em>"I created a fake 'Office Supplies' eBay account. My wife thinks I'm really into... staplers?"</em></p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Stealth Master">
+                                <div>
+                                    <div class="fw-bold">StaplerSteve</div>
+                                    <div class="text-muted small">Undetected for 3 years</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-4 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text"><em>"I hide cars in cereal boxes. My husband thinks I've developed a strange cereal obsession."</em></p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Stealth Master">
+                                <div>
+                                    <div class="fw-bold">CerealKillerKaren</div>
+                                    <div class="text-muted small">200+ boxes concealed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-4 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text"><em>"I told my wife I'm a secret shopper for toy stores. She thinks I'm getting paid to buy these!"</em></p>
+                            <div class="d-flex align-items-center mt-4">
+                                <img src="https://i.postimg.cc/8zQ0J1XJ/hotwheels-hero1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Stealth Master">
+                                <div>
+                                    <div class="fw-bold">SecretShopperSam</div>
+                                    <div class="text-muted small">Professional Deceiver</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="text-white mb-4">Hotwheels Maniacs</h3>
+                    <p>Enabling poor financial decisions since 1968. Not affiliated with Mattel (but we wish we were).</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../pages/why.html">Why We're Like This</a></li>
+                        <li class="mb-2"><a href="../pages/hide.html">How to Hide Purchases</a></li>
+                        <li class="mb-2"><a href="https://www.avocati-romania.com/articole/cum-sa-gasesti-un-avocat-bun-pentru-divorturi-11">Divorce Lawyers</a></li>
+                        <li class="mb-2"><a href="../pages/storage.html">Storage Solutions</a></li>
+                        <li class="mb-2"><a href="../pages/excuses.html">Excuses for Spouses</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Help & Support</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">FAQ (Frequently Avoided Questions)</a></li>
+                        <li class="mb-2"><a href="#">Shipping (We're Not Amazon)</a></li>
+                        <li class="mb-2"><a href="#">Returns (LOL)</a></li>
+                        <li class="mb-2"><a href="#">Contact (We Probably Won't Reply)</a></li>
+                        <li class="mb-2"><a href="#">Therapy Recommendations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h4 class="text-white mb-4">Legal Stuff</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Terms of Service (Don't Read)</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy (We Sell Your Data)</a></li>
+                        <li class="mb-2"><a href="#">Cookie Policy (Mmm... Cookies)</a></li>
+                        <li class="mb-2"><a href="#">Disclaimer (Not Our Fault)</a></li>
+                        <li class="mb-2"><a href="#">Get Rich Quick Schemes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+<div class="border-top mt-5 pt-4">
+    <div class="row justify-content-center"> 
+        <div class="col-md-6 text-center"> 
+            <p class="mb-0">&copy; 2025 Hotwheels Maniacs Madhouse. All rights reserved. All cars overpriced.</p>
+        </div>
+    </div>
+</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/hide.js"></script>
+</body>
+</html>
