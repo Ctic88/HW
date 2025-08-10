@@ -279,3 +279,140 @@ body {
     background-color: var(--hotwheels-red);
     color: white !important;
 }
+
+/* Hide */
+
+        .method-card {
+            transition: all 0.3s;
+            border-left: 5px solid var(--hotwheels-red);
+        }
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(229, 25, 55, 0.1);
+        }
+        .effectiveness-meter {
+            height: 10px;
+            border-radius: 5px;
+            background: #e9ecef;
+            margin-bottom: 10px;
+        }
+        .effectiveness-bar {
+            height: 100%;
+            border-radius: 5px;
+            background: var(--hotwheels-red);
+        }
+        .difficulty-badge {
+            font-size: 0.8rem;
+        }
+        .stealth-image {
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .stealth-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.8rem;
+        }
+
+/* Why */
+
+        .psychology-card {
+            border-left: 5px solid var(--hotwheels-red);
+            transition: all 0.3s;
+        }
+        .psychology-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(229, 25, 55, 0.1);
+        }
+        .theory-icon {
+            font-size: 2.5rem;
+            color: var(--hotwheels-red);
+            margin-bottom: 1rem;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--hotwheels-red);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -43px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--hotwheels-red);
+            border: 4px solid white;
+        }
+
+/* Storage  */
+        .solution-card {
+            transition: all 0.3s;
+            border-left: 5px solid var(--hotwheels-red);
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(229, 25, 55, 0.1);
+        }
+        .solution-icon {
+            font-size: 2.5rem;
+            color: var(--hotwheels-red);
+            margin-bottom: 1rem;
+        }
+        .storage-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.8rem;
+        }
+        .storage-image {
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+/* Excuses */
+
+        .excuse-card {
+            transition: transform 0.3s;
+            border-left: 5px solid var(--hotwheels-red);
+        }
+        .excuse-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(229, 25, 55, 0.1);
+        }
+        .excuse-number {
+            background-color: var(--hotwheels-red);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .category-badge {
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }

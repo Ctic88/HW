@@ -10,50 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        /* Page-specific styles */
-        .psychology-card {
-            border-left: 5px solid var(--hotwheels-red);
-            transition: all 0.3s;
-        }
-        .psychology-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(229, 25, 55, 0.1);
-        }
-        .theory-icon {
-            font-size: 2.5rem;
-            color: var(--hotwheels-red);
-            margin-bottom: 1rem;
-        }
-        .timeline {
-            position: relative;
-            padding-left: 50px;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 15px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: var(--hotwheels-red);
-        }
-        .timeline-item {
-            position: relative;
-            margin-bottom: 30px;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -43px;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: var(--hotwheels-red);
-            border: 4px solid white;
-        }
-    </style>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -70,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+                        <a class="nav-link active" href="../pages/asylum.html"><i class="fas fa-home me-1"></i> Asylum Entrance</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="asylum.html"><i class="fas fa-door-open me-1"></i> Asylum</a>
+                        <a class="nav-link" href="../pages/why.html" class="fas fa-car me-1"></i> Why are we like this?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="why.html"><i class="fas fa-question-circle me-1"></i> Why We're Like This</a>
+                        <a class="nav-link" href="../pages/hide.html"><i class="fas fa-money-bill-wave me-1"></i> Just hide them!</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="excuses.html"><i class="fas fa-comment-dots me-1"></i> Excuses</a>
+                        <a class="nav-link" href="../pages/excuses.html"><i class="fas fa-users me-1"></i> Excuses!</a>
                     </li>
                 </ul>
             </div>

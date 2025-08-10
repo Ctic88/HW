@@ -10,37 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        /* Additional Styles for This Page */
-        .excuse-card {
-            transition: transform 0.3s;
-            border-left: 5px solid var(--hotwheels-red);
-        }
-        .excuse-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(229, 25, 55, 0.1);
-        }
-        .excuse-number {
-            background-color: var(--hotwheels-red);
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 15px;
-        }
-        .search-box {
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        .category-badge {
-            font-size: 0.8rem;
-            margin-right: 5px;
-        }
-    </style>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -57,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+                        <a class="nav-link active" href="../pages/asylum.html"><i class="fas fa-home me-1"></i> Asylum Entrance</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="asylum.html"><i class="fas fa-door-open me-1"></i> Asylum</a>
+                        <a class="nav-link" href="../pages/why.html" class="fas fa-car me-1"></i> Why are we like this?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="excuses.html"><i class="fas fa-comment-dots me-1"></i> Excuses for Spouses</a>
+                        <a class="nav-link" href="../pages/hide.html"><i class="fas fa-money-bill-wave me-1"></i> Just hide them!</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="community.html"><i class="fas fa-users me-1"></i> Community</a>
+                        <a class="nav-link" href="../pages/excuses.html"><i class="fas fa-users me-1"></i> Excuses!</a>
                     </li>
                 </ul>
             </div>
@@ -74,18 +44,13 @@
     </nav>
 
     <!-- Hero Section -->
-<section class="hero position-relative" style="background-image: url('../img/carousel.jpeg');">
-    <!-- Added position-relative to parent -->
-    <div class="hero-overlay position-absolute w-100 h-100"></div>
-       
-    <div class="container h-100 position-relative">
-        <!-- Added position-relative to container -->
-        <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-                <h1 class="display-3 fw-bold text-white">101 Excuses for Spouses</h1>
-                <!-- Explicit text-white class added -->
-                <p class="lead text-white">Because "I just wanted it" isn't convincing enough</p>
-                <!-- Explicit text-white class added -->
+<section class="hero" style="background-image: url('../img/carousel.jpeg');">
+    <div class="hero-overlay"></div>
+    <div class="container h-100 d-flex">
+        <div class="row align-items-center w-100">
+            <div class="col-12 text-center text-white">
+                <h1 class="display-3 fw-bold">101 Excuses for Spouses</h1>
+                <p class="lead">Because "I just wanted it" isn't convincing enough</p>
             </div>
         </div>
     </div>
